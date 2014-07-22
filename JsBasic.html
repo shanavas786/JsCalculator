@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>JsCalc</title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--calculator-->
+<div id="calc">
+	<div id="titlebar">
+		JsCalculator
+	</div>
+	<div id="menubar">
+		<ul id="menu">
+			<li onMouseOver="showMenu();" onMouseOut="hideMenu();">Mode
+				<ul id="menu-mode">
+					<li>Basic</li>
+<!-- To be implemented -->
+<!--					<li>Scientific</li>    -->
+<!--					<li>Programming</li>    -->
+				</ul>
+			</li>
+			<li onClick="showAbout()" title="Click to know more">About</li>
+			<li onClick="showHelp()" title="Click for help">Help</li>
+		</ul>
+	</div>
+	<hr color="#eeeeee">
+	<div id="input-top">
+	</div>
+	<div id="input-bottom">
+	</div>
+	<div id="keypad">
+		<table align="center">
+			<tr>
+				<td class="button" onClick="buttonPress('bs')">&larr;</td>
+				<td class="button" onClick="buttonPress('cl')">C</td>
+				<td class="button" onClick="buttonPress('sr')">&radic;</td>
+				<td class="button" onClick="buttonPress('+')">+</td>
+				<td class="button" onClick="buttonPress('-')">&minus;</td>
+			</tr>
+			<tr>
+				<td class="button" onClick="buttonPress(1)">1</td>
+				<td class="button" onClick="buttonPress(2)">2</td>
+				<td class="button" onClick="buttonPress(3)">3</td>
+				<td class="button" onClick="buttonPress('*')">&lowast;</td>
+				<td class="button" onClick="buttonPress('/')">/</td>
+			</tr>
+			<tr>
+				<td class="button" onClick="buttonPress(4)">4</td>
+				<td class="button" onClick="buttonPress(5)">5</td>
+				<td class="button" onClick="buttonPress(6)">6</td>
+				<td class="button" onClick="buttonPress('pm')">&#8723;</td>
+				<td class="button" onClick="buttonPress('eq')">=</td>
+			</tr>
+			<tr>
+				<td class="button" onClick="buttonPress(7)">7</td>
+				<td class="button" onClick="buttonPress(8)">8</td>
+				<td class="button" onClick="buttonPress(9)">9</td>
+				<td class="button" onClick="buttonPress(0)">0</td>
+				<td class="button" onClick="buttonPress('.')">&#8729;</td>
+			</tr>
+		</table>
+		<div id="footer">Copyright &copy; 2014 Shanavas M</div>
+	</div>
+</div>
+<!--calculator-->
+</body>
+</html>
